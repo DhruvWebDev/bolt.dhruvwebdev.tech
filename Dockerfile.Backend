@@ -1,0 +1,16 @@
+
+FROM node:18-alpine 
+
+WORKDIR /app
+
+COPY . .
+
+RUN ls
+
+RUN npm install
+
+# Convert the go file into executable binary
+RUN npm run build:backend
+
+// execute the binary
+CMD ["npm","run", "start:worker"]
