@@ -8,10 +8,11 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "start:web": "cd ./apps/web && next start",
-    "build:backend":"cd ./apps/backend && go build",
-    "start:baxckend":"cd ./apps/worker && go run ./backend"
+    "build:backend": "cd ./apps/backend && go build",
+    "start:baxckend": "cd ./apps/worker && go run ./backend"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "turbo": "^2.4.4",
     "typescript": "5.8.2"
